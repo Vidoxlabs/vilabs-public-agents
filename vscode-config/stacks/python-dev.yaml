@@ -1,0 +1,24 @@
+name: "Python Dev Stack"
+description: "General Python development environment with essential tools and extensions."
+modules:
+  core:
+    - editor.json
+    - security.json
+  settings:
+    - base.json
+    - copilot.json
+    - python.json
+    - advanced.json
+  extensions:
+    - essentials.json
+    - python.json
+  platforms:
+    - macos.json
+  hardware:
+    - m4-16gb.json
+  mcp:
+    - base.json
+  tasks:
+    - general.json
+variables:
+  VILABS_REMOTE_NODE: "v37-node-01"

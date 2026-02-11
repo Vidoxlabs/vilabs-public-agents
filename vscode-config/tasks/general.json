@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "vilabs: health-check",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "echo '=== Vilabs Health Check ===' && echo 'Python:' && python --version && echo 'Git:' && git --version && echo 'Make:' && make --version | head -1 && echo 'Docker:' && docker --version && echo 'Health check complete!'"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    }
+  ]
+}

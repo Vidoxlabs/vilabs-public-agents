@@ -1,0 +1,56 @@
+{
+  "approvedTerminals": {
+    "commands": {
+      "autoApprove": [
+        "git status",
+        "git diff",
+        "git log",
+        "git show",
+        "git branch",
+        "git checkout",
+        "git add",
+        "git commit",
+        "git push",
+        "git pull",
+        "pytest",
+        "pytest *",
+        "python -m pytest",
+        "python -m pytest *",
+        "make *",
+        "make format",
+        "make lint",
+        "make typecheck",
+        "make test",
+        "make check",
+        "make up",
+        "make down",
+        "make rebuild",
+        "make dev-tools",
+        "make deploy-dev-stack*",
+        "npm test",
+        "npm run test",
+        "npm run build",
+        "npm run lint",
+        "npm run format",
+        "docker ps",
+        "docker compose ps",
+        "docker compose logs"
+      ]
+    }
+  },
+  "approvedFiles": {
+    "fileEditPatterns": [
+      ".vscode/*.json",
+      "docs/**/*",
+      "*.md",
+      "tasks/*.json",
+      "extensions/*.json",
+      "settings/*.json",
+      "stacks/*.yaml",
+      "README.md",
+      "CONTRIBUTING.md"
+    ]
+  },
+  "security.workspace.trust.enabled": true,
+  "security.workspace.trust.untrustedFiles": "prompt"
+}

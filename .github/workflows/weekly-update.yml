@@ -1,0 +1,58 @@
+name: Weekly Confidence Update
+
+on:
+  schedule:
+    # Run every Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-confidence:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Need write permissions to push updates
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install jsonschema pyyaml
+      
+      - name: Update confidence ratings
+        run: |
+          REPO_ROOT=. python3 automation/scripts/calculate_confidence.py
+      
+      - name: Generate analysis report
+        run: |
+          REPO_ROOT=. python3 automation/scripts/analyze_agents.py
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet || echo "has_changes=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "chore: update confidence ratings and analysis reports"
+          git push
+      
+      - name: Create summary
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          echo "✅ Confidence ratings updated successfully" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Updated files:" >> $GITHUB_STEP_SUMMARY
+          git diff --name-only HEAD~1 >> $GITHUB_STEP_SUMMARY

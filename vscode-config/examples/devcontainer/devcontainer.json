@@ -1,0 +1,36 @@
+{
+  "name": "Violet Dev Container",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "settings": {
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
+    "[python]": {
+      "editor.defaultFormatter": "charliermarsh.ruff",
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+      }
+    },
+    "python.testing.pytestEnabled": true,
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "charliermarsh.ruff",
+    "ms-python.mypy-type-checker",
+    "wholroyd.jinja",
+    "redhat.vscode-yaml",
+    "ms-azuretools.vscode-docker",
+    "mtxr.sqltools"
+  ],
+  "forwardPorts": [8000, 5432, 6379, 8200],
+  "postCreateCommand": "make dev-tools",
+  "remoteUser": "vscode",
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,readonly,type=bind"
+  ],
+  "containerEnv": {
+    "PYTHONUNBUFFERED": "1"
+  }
+}

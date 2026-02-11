@@ -1,0 +1,69 @@
+name: Validate Agents
+
+on:
+  pull_request:
+    paths:
+      - "agents/**"
+      - "prompts/**"
+      - "schemas/**"
+      - "automation/**"
+      - "instructions/**"
+      - "skills/**"
+      - "tools/**"
+      - "mcp-servers/**"
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install jsonschema pyyaml
+
+      - name: Validate metadata schema
+        run: |
+          python3 automation/validators/validate_metadata.py
+
+      - name: Validate skill files
+        run: |
+          python3 automation/validators/validate_skills.py
+
+      - name: Validate public-safety rules
+        run: |
+          python3 automation/validators/validate_public_safety.py
+
+      - name: Analyze agent cross-references
+        run: |
+          REPO_ROOT=. python3 automation/scripts/analyze_agents.py
+
+      - name: Calculate confidence ratings
+        run: |
+          REPO_ROOT=. python3 automation/scripts/calculate_confidence.py
+
+      - name: Upload analysis reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: agent-analysis-reports
+          path: docs/*.md
+          retention-days: 30
+
+      - name: Check for validation errors
+        if: failure()
+        run: |
+          echo "::error::Agent validation failed. Please review the errors above."
+          exit 1

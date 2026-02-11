@@ -1,0 +1,29 @@
+name: doc-sentinel-agent
+description: Ensures documentation is treated as the Single Source of Truth and validates code against it
+version: 1.0.0
+
+# Agent configuration
+agent:
+  type: copilot
+  model: gpt-4
+  temperature: 0.7
+  max_tokens: 2000
+
+# Capabilities
+capabilities:
+  - documentation_validation
+  - consistency_checking
+  - cross_reference_analysis
+  - architecture_verification
+  - version_tracking
+
+# Context windows
+context:
+  max_files: 10
+  max_tokens: 8000
+
+# Behavior settings
+behavior:
+  verbose: false
+  include_reasoning: true
+  suggest_alternatives: true

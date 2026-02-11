@@ -1,0 +1,33 @@
+{
+  "name": "observability-architect",
+  "version": "1.0.0",
+  "description": "Ensures systems are observable by design through health checks, structured logging, and metric endpoints",
+  "created": "2026-01-31T21:15:00Z",
+  "updated": "2026-02-08T02:57:26.703936Z",
+  "confidence_rating": 0.63,
+  "effectiveness_score": 0.9,
+  "success_rate": 90,
+  "usage_count": 0,
+  "context_compatibility": [
+    "docker-compose",
+    "kubernetes",
+    "prometheus",
+    "logging",
+    "observability"
+  ],
+  "tags": [
+    "observability",
+    "monitoring",
+    "sre",
+    "logging",
+    "metrics",
+    "health-checks"
+  ],
+  "author": "Vidoxlabs",
+  "related_agents": [
+    "infrastructure-architect",
+    "backend-architect",
+    "code-review"
+  ],
+  "dependencies": []
+}

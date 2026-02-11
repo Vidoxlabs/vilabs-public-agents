@@ -1,0 +1,29 @@
+name: observability-architect
+description: Ensures systems are observable by design through health checks, structured logging, and metric endpoints
+version: 1.0.0
+
+# Agent configuration
+agent:
+  type: copilot
+  model: gpt-4
+  temperature: 0.7
+  max_tokens: 2000
+
+# Capabilities
+capabilities:
+  - health_check_validation
+  - metrics_configuration
+  - logging_strategy
+  - observability_standards
+  - monitoring_integration
+
+# Context windows
+context:
+  max_files: 10
+  max_tokens: 8000
+
+# Behavior settings
+behavior:
+  verbose: false
+  include_reasoning: true
+  suggest_alternatives: true

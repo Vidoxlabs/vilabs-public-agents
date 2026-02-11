@@ -1,0 +1,60 @@
+version: 1.0.0
+tools:
+  - name: list_files
+    description: List files/directories under a given path.
+    request:
+      type: object
+      properties:
+        path:
+          type: string
+          description: Relative path from repository root.
+        recursive:
+          type: boolean
+          description: Whether to recurse into subdirectories.
+      required: [path]
+    response:
+      type: object
+      properties:
+        entries:
+          type: array
+          items:
+            type: string
+
+  - name: search_text
+    description: Search repository text for a literal or regex pattern.
+    request:
+      type: object
+      properties:
+        pattern:
+          type: string
+        path:
+          type: string
+      required: [pattern]
+    response:
+      type: object
+      properties:
+        matches:
+          type: array
+          items:
+            type: object
+            properties:
+              file:
+                type: string
+              line:
+                type: integer
+              snippet:
+                type: string
+
+  - name: read_file
+    description: Read a text file for contextual analysis.
+    request:
+      type: object
+      properties:
+        path:
+          type: string
+      required: [path]
+    response:
+      type: object
+      properties:
+        content:
+          type: string

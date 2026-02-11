@@ -1,0 +1,33 @@
+{
+  "name": "sql-optimizer",
+  "version": "1.0.0",
+  "description": "Analyzes database queries, execution plans, and suggests indexing and optimization strategies",
+  "created": "2026-02-01T12:00:00Z",
+  "updated": "2026-02-08T02:57:26.704301Z",
+  "confidence_rating": 0.62,
+  "effectiveness_score": 0.88,
+  "success_rate": 88,
+  "usage_count": 0,
+  "context_compatibility": [
+    "sql",
+    "database",
+    "performance-optimization",
+    "query-analysis"
+  ],
+  "tags": [
+    "sql",
+    "performance",
+    "indexing",
+    "optimization",
+    "database"
+  ],
+  "author": "Vidoxlabs",
+  "related_agents": [
+    "backend-architect",
+    "infrastructure-architect",
+    "code-review"
+  ],
+  "dependencies": [
+    "database-engines"
+  ]
+}

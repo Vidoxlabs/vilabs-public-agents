@@ -1,0 +1,38 @@
+# Build artifacts
+*.log
+*.tmp
+*.cache
+dist/
+build/
+*.pyc
+__pycache__/
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+.coverage
+*.cover
+
+# Temporary files
+tmp/
+temp/
+*.bak
+
+# Environment files (may contain sensitive data)
+.env
+.env.local

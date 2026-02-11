@@ -1,0 +1,28 @@
+{
+  "name": "repository-introspector",
+  "version": "1.0.0",
+  "description": "Scans repositories and recommends generic agent/skill configuration based on observable structure",
+  "created": "2026-02-08T00:00:00Z",
+  "updated": "2026-02-08T00:00:00Z",
+  "confidence_rating": 0.0,
+  "effectiveness_score": 0.0,
+  "success_rate": 0,
+  "usage_count": 0,
+  "context_compatibility": [
+    "general",
+    "onboarding",
+    "multi-language"
+  ],
+  "tags": [
+    "analysis",
+    "bootstrap",
+    "recommendation"
+  ],
+  "author": "Vidoxlabs",
+  "related_agents": [
+    "template-agent",
+    "code-review",
+    "monorepo-manager"
+  ],
+  "dependencies": []
+}

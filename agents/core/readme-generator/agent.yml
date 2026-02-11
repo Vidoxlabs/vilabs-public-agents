@@ -1,0 +1,26 @@
+name: "readme-generator"
+description: "Generates comprehensive README.md files by analyzing project structure and code."
+version: "1.0.0"
+
+agent:
+  mode: "auto"
+  tools:
+    - "codebase_search"
+    - "read_file"
+    - "list_dir"
+
+capabilities:
+  - "project-analysis"
+  - "technical-writing"
+  - "markdown-formatting"
+
+context:
+  root_dir: "."
+  depth: 2
+  include_extensions: [".md", ".json", ".yml", ".yaml", ".toml", ".js", ".ts", ".py", ".go", ".java", ".c", ".cpp", ".h", ".rs"]
+
+behavior:
+  on_start:
+    - "analyze_project_structure"
+  on_change:
+    - "reverify_content"

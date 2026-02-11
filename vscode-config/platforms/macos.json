@@ -1,0 +1,6 @@
+{
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "terminal.integrated.fontFamily": "SF Mono",
+  "terminal.integrated.fontSize": 13,
+  "workbench.colorTheme": "GitHub Dark Default"
+}

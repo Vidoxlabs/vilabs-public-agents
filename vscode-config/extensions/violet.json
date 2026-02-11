@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "wholroyd.jinja",
+    "samuelcolvin.jinjahtml",
+    "redhat.vscode-yaml",
+    "ms-azuretools.vscode-docker",
+    "mtxr.sqltools",
+    "mtxr.sqltools-driver-pg",
+    "hashicorp.terraform",
+    "timonwong.shellcheck",
+    "ms-vscode.makefile-tools",
+    "humao.rest-client",
+    "rangav.vscode-thunder-client"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "backend-architect",
+  "version": "1.0.0",
+  "description": "Expert in Python FastAPI, Pydantic, and scalable API design",
+  "created": "2026-02-01T10:05:00Z",
+  "updated": "2026-02-08T02:57:26.704122Z",
+  "confidence_rating": 0.64,
+  "effectiveness_score": 0.92,
+  "success_rate": 92,
+  "usage_count": 0,
+  "context_compatibility": [
+    "python",
+    "fastapi",
+    "api-design",
+    "database"
+  ],
+  "tags": [
+    "backend",
+    "api",
+    "database",
+    "python",
+    "fastapi",
+    "pydantic"
+  ],
+  "author": "Vidoxlabs",
+  "related_agents": [
+    "sql-optimizer",
+    "code-review",
+    "infrastructure-architect"
+  ],
+  "dependencies": [
+    "python",
+    "fastapi",
+    "pydantic",
+    "sqlalchemy"
+  ]
+}

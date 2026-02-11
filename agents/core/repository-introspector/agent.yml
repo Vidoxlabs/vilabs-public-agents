@@ -1,0 +1,23 @@
+name: repository-introspector
+description: Analyze a repository to identify technologies, structure, and recommended agent/skill configuration.
+version: 1.0.0
+
+agent:
+  type: copilot
+  model: gpt-4
+  temperature: 0.3
+  max_tokens: 2200
+
+capabilities:
+  - context_analysis
+  - metadata_suggestion
+  - recommendation_generation
+
+context:
+  max_files: 80
+  max_tokens: 12000
+
+behavior:
+  verbose: true
+  include_reasoning: true
+  suggest_alternatives: true

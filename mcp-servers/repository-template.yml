@@ -1,0 +1,22 @@
+version: 1.0.0
+server:
+  name: repository-provider
+  transport: stdio
+  command: ${MCP_REPO_COMMAND}
+  args:
+    - ${MCP_REPO_ARG_1}
+    - ${MCP_REPO_ARG_2}
+  env:
+    MCP_AUTH_TOKEN: ${MCP_AUTH_TOKEN}
+    MCP_BASE_URL: ${MCP_BASE_URL}
+
+contracts:
+  tools_manifest: tools/repo-tools.yml
+  required_tools:
+    - list_files
+    - search_text
+    - read_file
+
+notes:
+  - Replace all placeholders in private environment configuration.
+  - Keep secrets outside version control.

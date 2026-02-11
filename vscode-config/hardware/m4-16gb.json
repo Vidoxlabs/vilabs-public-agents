@@ -1,0 +1,19 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.smoothScrolling": false,
+  "workbench.editor.enablePreview": true,
+  "editor.suggest.localityBonus": false,
+  "editor.suggest.shareSuggestSelections": false,
+  "search.searchOnType": false,
+  "search.followSymlinks": false,
+  "files.watcherExclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/.venv": true,
+    "**/venv": true,
+    "**/__pycache__": true,
+    "**/dist": true,
+    "**/build": true
+  }
+}

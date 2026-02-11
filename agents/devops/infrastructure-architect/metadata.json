@@ -1,0 +1,35 @@
+{
+  "name": "infrastructure-architect",
+  "version": "1.0.0",
+  "description": "Validates infrastructure-as-code patterns, enforces service discovery, and ensures immutable infrastructure principles",
+  "created": "2026-01-31T20:00:00Z",
+  "updated": "2026-02-08T02:57:26.703768Z",
+  "confidence_rating": 0.64,
+  "effectiveness_score": 0.9,
+  "success_rate": 92,
+  "usage_count": 0,
+  "context_compatibility": [
+    "docker-compose",
+    "kubernetes",
+    "terraform",
+    "system-design",
+    "devops"
+  ],
+  "tags": [
+    "iac",
+    "sre",
+    "docker",
+    "kubernetes",
+    "terraform",
+    "architecture",
+    "security"
+  ],
+  "author": "Vidoxlabs",
+  "related_agents": [
+    "backend-architect",
+    "code-review",
+    "security-guardian",
+    "sql-optimizer"
+  ],
+  "dependencies": []
+}

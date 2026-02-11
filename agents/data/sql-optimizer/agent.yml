@@ -1,0 +1,29 @@
+name: sql-optimizer
+description: Analyzes database queries, execution plans, and suggests indexing and optimization strategies
+version: 1.0.0
+
+# Agent configuration
+agent:
+  type: copilot
+  model: gpt-4
+  temperature: 0.7
+  max_tokens: 2000
+
+# Capabilities
+capabilities:
+  - query_analysis
+  - execution_plan_review
+  - indexing_strategy
+  - performance_optimization
+  - normalization_review
+
+# Context windows
+context:
+  max_files: 10
+  max_tokens: 8000
+
+# Behavior settings
+behavior:
+  verbose: false
+  include_reasoning: true
+  suggest_alternatives: true

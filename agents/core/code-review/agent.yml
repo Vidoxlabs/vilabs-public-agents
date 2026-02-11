@@ -1,0 +1,29 @@
+name: code-review
+description: Specialized agent for comprehensive code reviews focusing on quality and best practices
+version: 1.0.0
+
+# Agent configuration
+agent:
+  type: copilot
+  model: gpt-4
+  temperature: 0.7
+  max_tokens: 2000
+
+# Capabilities
+capabilities:
+  - code_analysis
+  - quality_review
+  - bug_detection
+  - performance_review
+  - documentation_review
+
+# Context windows
+context:
+  max_files: 10
+  max_tokens: 8000
+
+# Behavior settings
+behavior:
+  verbose: false
+  include_reasoning: true
+  suggest_alternatives: true

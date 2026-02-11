@@ -1,0 +1,39 @@
+name: "cicd-pipeline-generator"
+description: "Generates CI/CD pipeline configurations for GitHub Actions and GitLab CI."
+version: "1.0.0"
+
+agent:
+  mode: "auto"
+  tools:
+    - "codebase_search"
+    - "read_file"
+    - "list_dir"
+
+capabilities:
+  - "ci-cd-automation"
+  - "workflow-optimization"
+  - "infrastructure-as-code"
+
+context:
+  root_dir: "."
+  depth: 2
+  include_extensions:
+    [
+      ".json",
+      ".toml",
+      ".yaml",
+      ".yml",
+      ".dockerfile",
+      "Dockerfile",
+      ".js",
+      ".ts",
+      ".py",
+      ".go",
+      ".java",
+    ]
+
+behavior:
+  on_start:
+    - "detect_stack_and_provider"
+  on_change:
+    - "validate_pipeline_config"

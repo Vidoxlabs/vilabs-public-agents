@@ -1,0 +1,31 @@
+{
+  "name": "code-review",
+  "version": "1.0.0",
+  "description": "Specialized agent for comprehensive code reviews focusing on quality and best practices",
+  "created": "2026-01-31T18:00:00Z",
+  "updated": "2026-02-08T02:57:26.704639Z",
+  "confidence_rating": 0.9,
+  "effectiveness_score": 0.85,
+  "success_rate": 85,
+  "usage_count": 127,
+  "context_compatibility": [
+    "code-review",
+    "pull-requests",
+    "refactoring",
+    "quality-assurance"
+  ],
+  "tags": [
+    "code-review",
+    "quality",
+    "best-practices",
+    "analysis",
+    "maintainability"
+  ],
+  "author": "Vidoxlabs",
+  "related_agents": [
+    "backend-architect",
+    "security-guardian",
+    "sql-optimizer"
+  ],
+  "dependencies": []
+}

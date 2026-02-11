@@ -1,0 +1,33 @@
+{
+  "name": "security-guardian",
+  "version": "1.0.0",
+  "description": "Enforces strict secret management and least-privilege container security practices",
+  "created": "2026-01-31T21:00:00Z",
+  "updated": "2026-02-08T02:57:26.703595Z",
+  "confidence_rating": 0.67,
+  "effectiveness_score": 0.95,
+  "success_rate": 95,
+  "usage_count": 0,
+  "context_compatibility": [
+    "docker",
+    "kubernetes",
+    "environment-files",
+    "terraform",
+    "secrets-management"
+  ],
+  "tags": [
+    "security",
+    "secrets",
+    "compliance",
+    "hardening",
+    "devsecops",
+    "credentials"
+  ],
+  "author": "Vidoxlabs",
+  "related_agents": [
+    "infrastructure-architect",
+    "code-review",
+    "doc-sentinel-agent"
+  ],
+  "dependencies": []
+}

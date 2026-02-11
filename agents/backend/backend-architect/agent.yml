@@ -1,0 +1,29 @@
+name: backend-architect
+description: Expert in Python FastAPI, Pydantic, and scalable API design
+version: 1.0.0
+
+# Agent configuration
+agent:
+  type: copilot
+  model: gpt-4
+  temperature: 0.7
+  max_tokens: 2000
+
+# Capabilities
+capabilities:
+  - api_design
+  - code_review
+  - database_schema
+  - type_safety
+  - documentation
+
+# Context windows
+context:
+  max_files: 10
+  max_tokens: 8000
+
+# Behavior settings
+behavior:
+  verbose: false
+  include_reasoning: true
+  suggest_alternatives: true

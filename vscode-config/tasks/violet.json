@@ -1,0 +1,157 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Violet: Install Dev Tools",
+      "type": "shell",
+      "command": "make dev-tools",
+      "options": {
+        "cwd": "{{VILABS_VIOLET_PATH}}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Violet: Format",
+      "type": "shell",
+      "command": "make format",
+      "options": {
+        "cwd": "{{VILABS_VIOLET_PATH}}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Violet: Lint",
+      "type": "shell",
+      "command": "make lint",
+      "options": {
+        "cwd": "{{VILABS_VIOLET_PATH}}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Violet: Typecheck",
+      "type": "shell",
+      "command": "make typecheck",
+      "options": {
+        "cwd": "{{VILABS_VIOLET_PATH}}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Violet: Test",
+      "type": "shell",
+      "command": "make test",
+      "options": {
+        "cwd": "{{VILABS_VIOLET_PATH}}"
+      },
+      "problemMatcher": [
+        "$pytest"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Violet: Check All",
+      "type": "shell",
+      "command": "make check",
+      "options": {
+        "cwd": "{{VILABS_VIOLET_PATH}}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Violet: Compose Up",
+      "type": "shell",
+      "command": "make up",
+      "options": {
+        "cwd": "{{VILABS_VIOLET_PATH}}"
+      },
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Violet: Compose Down",
+      "type": "shell",
+      "command": "make down",
+      "options": {
+        "cwd": "{{VILABS_VIOLET_PATH}}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Violet: Rebuild Images",
+      "type": "shell",
+      "command": "make rebuild",
+      "options": {
+        "cwd": "{{VILABS_VIOLET_PATH}}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Violet: Deploy Dev Stack",
+      "type": "shell",
+      "command": "make deploy-dev-stack USERNAME=${input:v_username} PASSWORD=${input:v_password} MANAGER_URL=${input:v_managerUrl}",
+      "options": {
+        "cwd": "{{VILABS_VIOLET_PATH}}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "v_username",
+      "type": "promptString",
+      "description": "Manager admin username"
+    },
+    {
+      "id": "v_password",
+      "type": "promptString",
+      "password": true,
+      "description": "Manager admin password"
+    },
+    {
+      "id": "v_managerUrl",
+      "type": "promptString",
+      "default": "http://localhost:8000",
+      "description": "Violet manager URL"
+    }
+  ]
+}
