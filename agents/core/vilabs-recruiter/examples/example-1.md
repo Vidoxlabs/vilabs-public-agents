@@ -2,7 +2,7 @@
 
 ## Input
 
-"Configure this repository for AI-assisted development. Start by understanding project scope, then recruit the right agents from the public vilabs catalog and set up `.github` configuration."
+"Assist me in creating an AI-assisted development setup for this repository. Start by understanding project scope, ask me clarifying questions, then recruit the right agents from the public vilabs catalog and set up `.github` configuration."
 
 ## Output
 

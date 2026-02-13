@@ -1,5 +1,5 @@
-name: vilabs-recruiter
-description: Main onboarding coordinator that analyzes a repository and recruits/configures suitable agents from vilabs-public-agents into .github.
+name: vilabs-setting
+description: IDE settings coordinator that reads vilabs-public-settings and configures repository-appropriate settings guidance.
 version: 1.0.0
 
 agent:
@@ -9,13 +9,12 @@ agent:
   max_tokens: 2600
 
 capabilities:
-  - repository_introspection
   - interactive_goal_elicitation
-  - objective_scope_extraction
-  - agent_recommendation
-  - template_mapping
-  - github_folder_bootstrap
+  - ide_context_detection
+  - settings_profile_recommendation
+  - settings_bundle_mapping
   - configuration_generation
+  - conflict_safe_merge_planning
   - safety_validation
 
 context:

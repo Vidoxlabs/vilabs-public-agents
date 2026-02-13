@@ -4,9 +4,11 @@ This guide defines the standard process for adding an agent to `vilabs-public-ag
 
 ## Recommended Onboarding Flow
 
-For repository onboarding, start with `agents/core/vilabs-recruiter/` as the primary entry point.
+For repository onboarding, start with `agents/core/vilabs-configurator/` when you want a single entry point.
 
+- Use `vilabs-configurator` to combine agent recruitment and IDE settings composition in one flow.
 - Use `vilabs-recruiter` to assess project scope and recruit/configure a best-fit agent stack.
+- Use `agents/core/vilabs-setting/` to compose IDE/editor settings from `vilabs-public-settings` templates.
 - Use `agents/core/repository-introspector/` directly for analysis-only workflows.
 
 ## Required Agent Files

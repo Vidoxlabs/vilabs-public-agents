@@ -1,0 +1,26 @@
+{
+  "name": "vilabs-setting",
+  "version": "1.0.0",
+  "description": "Primary settings agent that reads vilabs-public-settings and composes IDE-appropriate settings plans for repositories",
+  "created": "2026-02-13T00:00:00Z",
+  "updated": "2026-02-13T00:00:00Z",
+  "confidence_rating": 0.0,
+  "effectiveness_score": 0.0,
+  "success_rate": 0,
+  "usage_count": 0,
+  "context_compatibility": [
+    "general",
+    "settings",
+    "ide-configuration",
+    "onboarding"
+  ],
+  "tags": ["settings", "ide", "onboarding", "configuration", "editor"],
+  "author": "Vidoxlabs",
+  "related_agents": [
+    "vilabs-configurator",
+    "vilabs-recruiter",
+    "repository-introspector",
+    "frontend-architect"
+  ],
+  "dependencies": []
+}

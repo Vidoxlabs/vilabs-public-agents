@@ -18,7 +18,9 @@ General-purpose agents are suitable across many repositories and technology stac
 
 ## Featured General Agents
 
+- `core/vilabs-configurator` — unified onboarding orchestrator that configures both agent stacks and IDE settings
 - `core/vilabs-recruiter` — primary onboarding orchestrator that recruits and configures agent stacks into `.github/`
+- `core/vilabs-setting` — IDE settings orchestrator that maps public settings templates to repository-specific configuration plans
 - `core/repository-introspector` — analysis-first repository scanner for manual onboarding
 
 See `../docs/creating-agents.md` for creation standards.

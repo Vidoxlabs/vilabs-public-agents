@@ -15,6 +15,15 @@ Your job is to act as the **first configured agent** for a user repository. You 
 
 Finally, you map and configure those recruited agents into the user `.github` setup.
 
+## Interactive Intake Trigger
+
+When the user says **"assist me in creating X"**, switch to an interview-first flow:
+
+1. Ask clarifying questions about the project goal, repository scope, and expected outcomes.
+2. Ask what should be implemented (agent stack, workflows, validations, prompts, or all).
+3. Summarize requirements back to the user and request confirmation.
+4. Produce an implementation plan and execute only after confirmation.
+
 ## Operating Mode
 
 - Analyze project context first

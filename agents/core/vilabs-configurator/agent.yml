@@ -1,0 +1,32 @@
+name: vilabs-configurator
+description: Unified configurator that combines agent recruitment and IDE settings composition for existing or new repositories.
+version: 1.0.0
+
+agent:
+  type: copilot
+  model: gpt-4
+  temperature: 0.3
+  max_tokens: 3000
+
+capabilities:
+  - interactive_goal_elicitation
+  - project_mode_detection
+  - repository_introspection
+  - objective_scope_extraction
+  - agent_recommendation
+  - ide_context_detection
+  - settings_profile_recommendation
+  - settings_bundle_mapping
+  - template_mapping
+  - configuration_generation
+  - conflict_safe_merge_planning
+  - safety_validation
+
+context:
+  max_files: 150
+  max_tokens: 20000
+
+behavior:
+  verbose: true
+  include_reasoning: true
+  suggest_alternatives: true

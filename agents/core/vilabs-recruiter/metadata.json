@@ -1,7 +1,7 @@
 {
   "name": "vilabs-recruiter",
   "version": "1.0.0",
-  "description": "Primary onboarding agent that analyzes repository scope and recruits/configures suitable agents into .github",
+  "description": "Primary onboarding agent that analyzes repository scope, supports interactive goal intake, and recruits/configures suitable agents into .github",
   "created": "2026-02-13T00:00:00Z",
   "updated": "2026-02-13T00:00:00Z",
   "confidence_rating": 0.0,
@@ -17,6 +17,8 @@
   "tags": ["onboarding", "orchestration", "recruitment", "github", "bootstrap"],
   "author": "Vidoxlabs",
   "related_agents": [
+    "vilabs-configurator",
+    "vilabs-setting",
     "repository-introspector",
     "code-review",
     "readme-generator",
