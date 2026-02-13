@@ -16,4 +16,9 @@ General-purpose agents are suitable across many repositories and technology stac
 - Document assumptions and confidence levels
 - Include clear limits and fallback behavior
 
+## Featured General Agents
+
+- `core/vilabs-recruiter` — primary onboarding orchestrator that recruits and configures agent stacks into `.github/`
+- `core/repository-introspector` — analysis-first repository scanner for manual onboarding
+
 See `../docs/creating-agents.md` for creation standards.

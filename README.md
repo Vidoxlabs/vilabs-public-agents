@@ -1,4 +1,4 @@
-# vidocs-agents
+# vilabs-public-agents
 
 Public templates for agent configurations, prompts, skills, and automation.
 
@@ -14,7 +14,7 @@ This repository is intentionally **general-config only**. It is designed to be r
 ## Repository Layout
 
 ```text
-vidocs-agents/
+vilabs-public-agents/
 ├── agents/
 ├── prompts/
 ├── instructions/
@@ -29,11 +29,47 @@ vidocs-agents/
 
 ## Quick Start
 
-### 1. Start with Repository Analysis
+### 1. Configure ViLabs Recruiter (Primary Entry Point)
 
-Use `agents/core/repository-introspector/` first when onboarding an unfamiliar codebase.
+Use `agents/core/vilabs-recruiter/` first when onboarding an unfamiliar codebase.
 
-### 2. Select Templates
+The recruiter is responsible for:
+
+- understanding project objective and scope from repository evidence
+- selecting best-fit agents from this public catalog
+- mapping and applying configuration into the user repository’s `.github/` folder
+
+#### Quick Access (Click to Open)
+
+- [Open recruiter folder](agents/core/vilabs-recruiter/)
+- [agent.md](agents/core/vilabs-recruiter/agent.md)
+- [instructions.md](agents/core/vilabs-recruiter/instructions.md)
+- [agent.yml](agents/core/vilabs-recruiter/agent.yml)
+- [metadata.json](agents/core/vilabs-recruiter/metadata.json)
+- [example-1.md](agents/core/vilabs-recruiter/examples/example-1.md)
+
+#### Fast Configure in Your Repository (`.github`)
+
+Use this from the **target repository** where you want recruiter configured:
+
+```bash
+mkdir -p .github/agents .github/instructions
+
+curl -fsSL https://raw.githubusercontent.com/Vidoxlabs/vilabs-public-agents/main/agents/core/vilabs-recruiter/agent.md \
+	-o .github/agents/vilabs-recruiter.agent.md
+
+curl -fsSL https://raw.githubusercontent.com/Vidoxlabs/vilabs-public-agents/main/agents/core/vilabs-recruiter/instructions.md \
+	-o .github/instructions/vilabs-recruiter.instructions.md
+```
+
+> Note: A true one-click "auto-configure" action is platform-limited for security reasons, but the commands above are the fastest safe setup path.
+
+### 2. Review and Approve the Recruited Agent Stack
+
+Confirm selected agents and generated `.github` files before finalizing.
+For manual analysis-only onboarding, use `agents/core/repository-introspector/`.
+
+### 3. Select Templates
 
 Choose relevant assets from:
 
@@ -44,7 +80,7 @@ Choose relevant assets from:
 - `mcp-servers/`
 - `vscode-config/`
 
-### 3. Run Validation
+### 4. Run Validation
 
 ```bash
 pip install -r requirements.txt

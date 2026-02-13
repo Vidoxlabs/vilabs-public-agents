@@ -1,6 +1,6 @@
 # Automation Guide
 
-This guide describes the automation and validation workflow for `vidocs-agents`.
+This guide describes the automation and validation workflow for `vilabs-public-agents`.
 
 ## Tooling Overview
 

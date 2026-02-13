@@ -1,6 +1,6 @@
 # Repository Structure Guide
 
-This document defines the canonical structure for `vidocs-agents`.
+This document defines the canonical structure for `vilabs-public-agents`.
 
 ## Top-Level Directories
 

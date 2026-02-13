@@ -1,0 +1,27 @@
+name: vilabs-recruiter
+description: Main onboarding coordinator that analyzes a repository and recruits/configures suitable agents from vilabs-public-agents into .github.
+version: 1.0.0
+
+agent:
+  type: copilot
+  model: gpt-4
+  temperature: 0.3
+  max_tokens: 2600
+
+capabilities:
+  - repository_introspection
+  - objective_scope_extraction
+  - agent_recommendation
+  - template_mapping
+  - github_folder_bootstrap
+  - configuration_generation
+  - safety_validation
+
+context:
+  max_files: 120
+  max_tokens: 16000
+
+behavior:
+  verbose: true
+  include_reasoning: true
+  suggest_alternatives: true

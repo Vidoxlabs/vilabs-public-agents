@@ -1,4 +1,4 @@
-# Contributing to vidocs-agents
+# Contributing to vilabs-public-agents
 
 Thank you for contributing.
 

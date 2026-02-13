@@ -1,6 +1,13 @@
 # Creating Agents Guide
 
-This guide defines the standard process for adding an agent to `vidocs-agents`.
+This guide defines the standard process for adding an agent to `vilabs-public-agents`.
+
+## Recommended Onboarding Flow
+
+For repository onboarding, start with `agents/core/vilabs-recruiter/` as the primary entry point.
+
+- Use `vilabs-recruiter` to assess project scope and recruit/configure a best-fit agent stack.
+- Use `agents/core/repository-introspector/` directly for analysis-only workflows.
 
 ## Required Agent Files
 
