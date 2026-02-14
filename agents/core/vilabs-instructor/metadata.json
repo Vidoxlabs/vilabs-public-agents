@@ -1,0 +1,37 @@
+{
+  "name": "vilabs-instructor",
+  "version": "1.0.0",
+  "description": "Primary instructions coordinator that creates customized .github/instructions/ files for encoding repository guidelines, conventions, and AI agent behavior rules.",
+  "created": "2026-02-14T00:00:00Z",
+  "updated": "2026-02-14T00:00:00Z",
+  "confidence_rating": 0.0,
+  "effectiveness_score": 0.0,
+  "success_rate": 0,
+  "usage_count": 0,
+  "context_compatibility": [
+    "general",
+    "instructions",
+    "guidelines",
+    "github-config",
+    "onboarding",
+    "standards"
+  ],
+  "tags": [
+    "instructions",
+    "documentation",
+    "github-config",
+    "guidelines",
+    "standards",
+    "onboarding",
+    "best-practices"
+  ],
+  "author": "Vidoxlabs",
+  "related_agents": [
+    "vilabs-recruiter",
+    "vilabs-configurator",
+    "vilabs-setting",
+    "repository-introspector",
+    "code-review"
+  ],
+  "dependencies": []
+}

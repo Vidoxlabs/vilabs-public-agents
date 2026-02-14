@@ -1,0 +1,30 @@
+name: vilabs-instructor
+description: Primary instructions coordinator that creates customized .github/instructions/ files encoding repository guidelines and AI agent behavior rules.
+version: 1.0.0
+
+agent:
+  type: copilot
+  model: gpt-4
+  temperature: 0.3
+  max_tokens: 3000
+
+capabilities:
+  - interactive_goal_elicitation
+  - repository_structure_analysis
+  - architecture_pattern_detection
+  - convention_discovery
+  - instruction_category_mapping
+  - instruction_file_generation
+  - merge_safe_planning
+  - safety_validation
+  - confidence_rating
+
+context:
+  max_files: 150
+  max_tokens: 20000
+
+behavior:
+  verbose: true
+  include_reasoning: true
+  suggest_alternatives: true
+  cite_evidence: true
