@@ -4,11 +4,18 @@
   "version": "1.0.0",
   "author": "vidocs-agents",
   "created": "2024-05-20T00:00:00Z",
-  "updated": "2024-05-20T00:00:00Z",
-  "tags": ["documentation", "markdown", "setup", "onboarding"],
+  "updated": "2026-02-15T01:23:52.581381Z",
+  "tags": [
+    "documentation",
+    "markdown",
+    "setup",
+    "onboarding"
+  ],
   "confidence_rating": 0.0,
   "effectiveness_score": 0.0,
   "success_rate": 0.0,
   "usage_count": 0,
-  "context_compatibility": ["any"]
+  "context_compatibility": [
+    "any"
+  ]
 }

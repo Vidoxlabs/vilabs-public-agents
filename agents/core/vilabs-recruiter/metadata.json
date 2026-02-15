@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Primary onboarding agent that analyzes repository scope, supports interactive goal intake, and recruits/configures suitable agents into .github",
   "created": "2026-02-13T00:00:00Z",
-  "updated": "2026-02-13T00:00:00Z",
+  "updated": "2026-02-15T01:23:52.582342Z",
   "confidence_rating": 0.0,
   "effectiveness_score": 0.0,
   "success_rate": 0,
@@ -14,7 +14,13 @@
     "repository-analysis",
     "github-configuration"
   ],
-  "tags": ["onboarding", "orchestration", "recruitment", "github", "bootstrap"],
+  "tags": [
+    "onboarding",
+    "orchestration",
+    "recruitment",
+    "github",
+    "bootstrap"
+  ],
   "author": "Vidoxlabs",
   "related_agents": [
     "vilabs-configurator",

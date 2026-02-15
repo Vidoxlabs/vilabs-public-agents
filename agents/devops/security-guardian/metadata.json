@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Enforces strict secret management and least-privilege container security practices",
   "created": "2026-01-31T21:00:00Z",
-  "updated": "2026-02-08T02:57:26.703595Z",
+  "updated": "2026-02-15T01:23:52.579557Z",
   "confidence_rating": 0.67,
   "effectiveness_score": 0.95,
   "success_rate": 95,

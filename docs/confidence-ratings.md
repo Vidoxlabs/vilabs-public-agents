@@ -11,4 +11,11 @@
 | observability-architect | 0.63 | 0.90 | 0 |
 | sql-optimizer | 0.62 | 0.88 | 0 |
 | doc-sentinel-agent | 0.62 | 0.88 | 0 |
+| cicd-pipeline-generator | 0.00 | 0.00 | 0 |
 | template-agent | 0.00 | 0.00 | 0 |
+| vilabs-setting | 0.00 | 0.00 | 0 |
+| readme-generator | 0.00 | 0.00 | 0 |
+| vilabs-instructor | 0.00 | 0.00 | 0 |
+| vilabs-configurator | 0.00 | 0.00 | 0 |
+| vilabs-recruiter | 0.00 | 0.00 | 0 |
+| repository-introspector | 0.00 | 0.00 | 0 |
